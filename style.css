@@ -1,0 +1,18 @@
+body{
+    background-image: url(images/background-atvd-web.png);
+    background-size: cover;
+
+}
+
+.heading{
+    background-color: darkblue;
+    color: white;
+    padding: 106px;
+    margin: -100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+}
+
+
+    
