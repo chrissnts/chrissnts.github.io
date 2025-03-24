@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+    margin: 0;
+}
+
+.nav{
+    background-color: rgb(255, 255, 255); 
+    color: black;
+    padding: 28px;
+    margin: -15px;
+    border-style: solid;
+    
+}
+
+.bar {
+    background-color: rgb(255, 255, 255);
+    width: 170px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+h1{
+    color: white;
+}
+
