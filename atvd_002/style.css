@@ -1,0 +1,37 @@
+body{
+    background-image: url(images/background.png);
+    background-size: cover;
+}
+
+.heading{
+    background-color: darkblue;
+    color: white;
+    padding: 35px;
+    margin: -10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.textStyle{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: green;
+}
+
+.headTextStyle{
+    border-right-style: solid;
+    border-right: 10px;
+    border-color: white;
+}
