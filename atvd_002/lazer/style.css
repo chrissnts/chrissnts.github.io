@@ -1,0 +1,66 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+
+    .header1 {
+        background-color: darkblue;
+        color: white;
+        padding: 40px;
+        text-align: center;
+        border: none;
+        font-family: arial;
+    }
+
+    .header2 {
+        background-color: #aad7e6;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        border: none;
+    }
+    img {
+        margin-left: 37px;
+        
+    }
+
+    img:hover {
+        opacity: 50%;        
+    }
+
+    a:hover {
+        opacity: 50%;
+    }
+
+    div {
+        font-size: 150%;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+        border-right: 2px solid white ;
+        padding-right: 10px;
+    }
+
+    h1 {
+        font-family: arial;
+        font-size: 40px;
+        padding: 10px;
+        color: darkblue;
+    }
+
+    li {
+        font-family: arial;
+        font-size: 25px;
+        color: darkblue;
+    }
