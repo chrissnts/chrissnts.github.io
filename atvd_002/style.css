@@ -1,37 +1,66 @@
-body{
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     background-image: url(images/background.png);
     background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
 }
 
-.heading{
-    background-color: darkblue;
-    color: white;
-    padding: 35px;
-    margin: -10px;
-    font-family: Arial, Helvetica, sans-serif;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-}
 
-.textStyle{
-    color: blue;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    .header1 {
+        background-color: darkblue;
+        color: white;
+        padding: 40px;
+        text-align: center;
+        border: none;
+        font-family: arial;
+    }
 
-a{
-    color: white;
-    text-decoration: none;
-}
+    .header2 {
+        background-color: #aad7e6;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        border: none;
+    }
+    img {
+        margin-left: 37px;
+        
+    }
 
-a:hover{
-    color: green;
-}
+    img:hover {
+        opacity: 50%;        
+    }
 
-.headTextStyle{
-    border-right-style: solid;
-    border-right: 10px;
-    border-color: white;
-}
+    a:hover {
+        opacity: 50%;
+    }
+
+    div {
+        font-size: 150%;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+        border-right: 2px solid white ;
+        padding-right: 10px;
+    }
+
+    h1 {
+        font-family: arial;
+        font-size: 40px;
+        padding: 10px;
+        color: darkblue;
+    }
+
+    li {
+        font-family: arial;
+        font-size: 25px;
+        color: darkblue;
+    }

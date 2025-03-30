@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    padding: 25px;
+}
+
+
+.head h1 {
+    font-size: 80px;
+    text-shadow: 4px 4px 1px rgb(0, 0, 0);
+}
+
+.game-container {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.game {
+    display: inline-block;
+}
+
