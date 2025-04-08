@@ -1,0 +1,138 @@
+body{
+    display: grid;
+    grid-template-columns: 50%  50%;
+    grid-template-areas:
+    'content image'
+    'content image';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main{
+    margin-top: 40px;
+    margin-left: 30px;
+    grid-area: content;
+
+}
+
+h1{
+    color: darkblue;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+h2{
+    color: darkred;
+    font-size: 20px;
+}
+
+p{
+    color: darkred;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.password a{
+
+    text-decoration: none;
+    color: darkorange;
+}
+
+#inputEmail{
+    margin-top: 50px;
+}
+
+#inputPassword{
+    margin-top: 30px;
+}
+
+#inputEmail input{
+    height: 25px;
+    width: 90%;
+    border-top: 1px;
+    border-right: 0;
+    border-width: 0.5px;
+    
+}
+
+#inputPassword input{
+    height: 25px;
+    width: 90%;
+    border-top: 1px;
+    border-right: 0;
+    border-width: 0.5px;
+}
+
+
+
+#photo{
+    height: 100vh;
+    background-image: url(../images/scotland_yard.png);
+    background-size: cover;
+    grid-area: image;
+}
+
+
+button{
+    background-color: darkblue;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    padding: 8px;
+    margin-right: 50%;
+}
+
+#content{
+    margin-top: 28px;
+    width: 90%;
+    
+}
+
+hr{
+    margin-top: 30px;
+    
+}
+
+#icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 1px;
+}
+
+#icons svg{
+    margin-right: 110px;
+}
+
+.password{
+    display: inline-block;
+    position: absolute;
+}
+
+@media screen and (max-width: 920px) {
+    #photo{
+        display: none;
+
+    }
+
+    body{
+        grid-template-areas: 
+        'content content'
+        'content content';
+    }
+    
+    .password{
+        display: inline-block;
+    }
+    button{
+        margin-right: 43%;
+    }
+}
