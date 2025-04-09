@@ -2,63 +2,257 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS';
 }
 
 body {
     display: grid;
-    grid-template-rows: 70px 1fr 50px;
+    grid-template-rows: 180px 1fr 50px;
     grid-template-areas:
-        "nav nav"
-        "content  content"
-        "footer footer";
+        "nav nav nav"
+        "content  content content"
+        "footer footer footer";
     height: 100vh;
     background-color: #F5F5F5;
 }
 
-header{
+header {
     background-color: darkblue;
     grid-area: nav;
     padding: 10px;
-    height: 200px;
+    height: 180px;
 }
 
-#header1{
+#header1 {
     background-color: #F5F5F5;
     text-align: center;
 
 }
-#header1 img{
-    width: 50px;
-    height: 50px;
+
+#header1 img {
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 }
 
-.textLeft{
+.textLeft {
     position: absolute;
     left: 20px;
-    top: 15px;
+    top: 20px;
+    animation: arcoIris 3s infinite linear;
 }
 
-.textRight{
+.textRight {
     position: absolute;
     right: 20px;
-    top: 15px;
+    top: 20px;
+    animation: arcoIris 3s infinite linear;
 }
 
 
-#header2{
-    text-align: center;
+#header2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#header2 h1{
+#header2 h1 {
+    position: absolute;
+    top: 15%;
     color: white;
+    font-size: 40px;
 }
 
-#content{
+#content {
+    box-sizing: border-box;
     grid-area: content;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100%;
 }
 
-footer{
+.column {
+    float: left;
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column h1 {
+    color: darkred;
+}
+
+.column p {
+    font-size: 20px;
+}
+
+footer {
+    background-color: darkblue;
     grid-area: footer;
+    text-align: center;
+    padding: 7px;
+}
+
+
+@keyframes arcoIris {
+    0% {
+        color: red;
+    }
+
+    14% {
+        color: orange;
+    }
+
+    28% {
+        color: yellow;
+    }
+
+    42% {
+        color: green;
+    }
+
+    57% {
+        color: blue;
+    }
+
+    71% {
+        color: indigo;
+    }
+
+    85% {
+        color: violet;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+.leftPlane {
+    animation-name: movementLeft;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.rightPlane {
+    animation-name: movementRight;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes movementLeft {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(-40vw) rotate(-360deg);
+    }
+    100%{
+        transform: translateX(0) rotate(0);
+    }
+}
+
+@keyframes movementRight{
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    50% {
+        transform: translateX(40vw) rotate(360deg);
+    }
+    100%{
+        transform: translateX(0) rotate(0);
+    }
+}
+
+
+
+@media screen and (max-width: 1100px) {
+    .country {
+        display: none;
+    }
+
+    .textLeft {
+        top: 30px;
+        font-size: 25px;
+    }
+
+    .textRight {
+        top: 30px;
+        font-size: 25px;
+    }
+
+    .column {
+        width: 33%;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+
+
+    .textLeft {
+        top: 35px;
+        font-size: 20px;
+    }
+
+    .textRight {
+        top: 35px;
+        font-size: 20px;
+    }
+
+    .column {
+        width: 27%;
+    }
+
+
+}
+
+@media screen and (max-width: 650px) {
+    .column p {
+        font-size: 17px;
+    }
+
+    .column p svg {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .name {
+        display: none;
+    }
+
+    .column p {
+        font-size: 17px;
+    }
+
+    .column p svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .textLeft {
+        top: 40px;
+        font-size: 16px;
+    }
+
+    .textRight {
+        top: 40px;
+        font-size: 16px;
+    }
+
+    .column {
+        width: 40%;
+    }
 }

@@ -92,11 +92,12 @@ button{
 #content{
     margin-top: 28px;
     width: 90%;
-    
 }
 
 hr{
-    margin-top: 30px;
+    margin-top: 70px;
+    border-color: darkblue;
+    
     
 }
 
