@@ -245,35 +245,6 @@ hr {
     object-fit: cover;
 }
 
-.side-box {
-    position: absolute;
-    top: 200px;
-    right: 400px;
-    width: 350px;
-    background-color: #000000;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 4px 4px 12px rgb(0, 0, 0);
-    font-size: 16px;
-}
-
-.side-box h3,
-.side-box h4 {
-    margin-bottom: 10px;
-    color: #ffffff;
-}
-
-.side-box ul {
-    color: white;
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 15px;
-}
-
-.side-box li {
-    margin-bottom: 5px;
-}
-
 @media (max-width: 768px) {
     body {
         display: block;
@@ -303,12 +274,6 @@ hr {
     .content {
         padding: 20px;
         margin-left: 0;
-    }
-
-    .side-box {
-        position: static;
-        width: auto;
-        margin-top: 20px;
     }
 
     .projects {
