@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>SeeYuh</title>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="main">
+            <h1>Simulator</h1>
+            <h2>Flex Box</h2>
+
+            <p>Fill Style</p>
+            <div class="colorPallete">
+                <div class="colorOption" style="background-color: rgb(255, 136, 239);" onclick="changeColor(this)">
+                </div>
+                <div class="colorOption" style="background-color: rgba(255, 168, 86, 0.856);"
+                    onclick="changeColor(this)"></div>
+                <div class="colorOption" style="background-color: rgb(122, 163, 223);" onclick="changeColor(this)">
+                </div>
+                <div class="colorOption" style="background-color: rgb(243, 208, 208);" onclick="changeColor(this)">
+                </div>
+                <div class="colorOption" style="background-color: rgb(255, 129, 11);" onclick="changeColor(this)"></div>
+                <div class="colorOption" style="background-color: rgb(125, 235, 152);" onclick="changeColor(this)">
+                </div>
+            </div>
+
+            <p>Shape</p>
+            <div class="shapeOption">
+                <div class="shapeFormat" onclick="setShape('square')"></div>
+                <div class="shapeFormatCircle" onclick="setShape('circle')"></div>
+            </div>
+
+            <p>Dimension</p>
+            <input type="number" name="size" class="inputSize" />
+
+            <p>Alignment</p>
+            <select name="layout-direction" class="dropdown direction-selector">
+                <option value="">FLEX-DIRECTION</option>
+                <option value="row">ROW</option>
+                <option value="column">COLUMN</option>
+                <option value="row-reverse">ROW-REVERSE</option>
+                <option value="column-reverse">COLUMN-REVERSE</option>
+            </select>
+
+            <select name="layout-justification" class="dropdown justify-selector">
+                <option value="">JUSTIFY-CONTENT</option>
+                <option value="flex-start">FLEX-START</option>
+                <option value="flex-end">FLEX-END</option>
+                <option value="space-around">SPACE-AROUND</option>
+                <option value="space-between">SPACE-BETWEEN</option>
+                <option value="center">CENTER</option>
+            </select>
+
+            <select name="item-alignment" class="dropdown align-selector">
+                <option value="">ALIGN-ITEMS</option>
+                <option value="center">CENTER</option>
+                <option value="flex-start">FLEX-START</option>
+                <option value="flex-end">FLEX-END</option>
+                <option value="stretch">STRETCH</option>
+                <option value="baseline">BASELINE</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="boxItem">1</div>
+        <div class="boxItem">2</div>
+        <div class="boxItem">3</div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
