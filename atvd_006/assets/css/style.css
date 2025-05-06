@@ -1,0 +1,33 @@
+.back-color {
+    background-color: rgba(10, 10, 12, 0.993);
+}
+
+.border-st {
+    border-color: gray;
+    border-width: 3px;
+}
+
+.custom {
+    color: white;
+}
+
+/* barra atras que afunda */
+input[type=range]::-webkit-slider-runnable-track {
+    height: 10px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* bolinha azul */
+input[type=range]::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    background: rgb(0, 47, 255);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+p{
+    color: gray;
+}
