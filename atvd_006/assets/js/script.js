@@ -48,4 +48,27 @@ function drawCharts() {
 
     var gradeChart = new google.visualization.PieChart(document.getElementById('grade_chart'));
     gradeChart.draw(gradeData, gradeOptions);
+
+    google.charts.load('current', { 'packages': ['geochart'], });
+    google.charts.setOnLoadCallback(drawChart);
+
+
+}
+
+function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+        ['Country', 'Frequency'],
+        ['Haiti', 300],
+        ['France', 400],
+        ['Brazil', 600],
+        ['United States', 500],
+    ]);
+
+    var options = {
+        colorAxis: { colors: ['dadada', '3d3d3d'] }
+    };
+
+    var chart = new google.visualization.GeoChart(document.getElementById('mapchart'));
+
+    chart.draw(data, options);
 }

@@ -15,76 +15,76 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    
+
     <title>SeeYuh</title>
 </head>
 
 <body>
     <nav style="border-bottom-right-radius: 100px; border-bottom-left-radius: 100px;"
-    class="navbar navbar-expand-lg navbar-dark back-color rounded-bottom-pill">
-    <div class="container d-flex align-items-center">
-        <a href="#" class="navbar-brand">
-            <img style="width: 65px; height: 65px;" src="assets/images/Ifpr.png" alt="ifpr" class="img-fluid bg-light rounded-circle">
-        </a>
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#itens">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="itens">
-            <ul class="navbar-nav">
-                <li class="nav-item me-4">
-                    <button type="button" class="btn btn-light text-dark border-st position-relative me-4">
-                        New Data
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                            57
-                        </span>
-                    </button>
-                </li>
-                <li class="nav-item me-4">
-                    <select class="form-select border-st" aria-label="Default select example">
-                        <option value="Annual">Annual</option>
-                        <option value="Monthly">Monthly</option>
-                        <option value="Weekly">Weekly</option>
-                    </select>
-                </li>
-                <li class="nav-item me-4">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label link-light" for="flexCheckDefault">
-                            Staff
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                        <label class="form-check-label link-light" for="flexCheckChecked">
-                            Students
-                        </label>
-                    </div>
-                </li>
-                <li class="nav-item me-4">
-                    <input type="color" class="form-control form-control-color" id="exampleColorInput"
-                        value="#563d7c" title="Choose your color">
-                </li>
-                <li class="nav-item me-4">
-                    <button class="btn bg-black link-light dropdown-toggle" type="button" id="dropdownMais" data-bs-toggle="dropdown" aria-expanded="false">
-                        More
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMais">
-                        <li>
-                            <button class="dropdown-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRegistro">
-                                Grade Record
-                            </button>
-                            
-                            <!-- fazer o mapa -->
-                            <button class="dropdown-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMapa">
-                                Grade Ferquency
-                            </button>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+        class="navbar navbar-expand-lg navbar-dark back-color rounded-bottom-pill">
+        <div class="container d-flex align-items-center">
+            <a href="#" class="navbar-brand">
+                <img style="width: 65px; height: 65px;" src="assets/images/Ifpr.png" alt="ifpr" class="img-fluid bg-light rounded-circle">
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#itens">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="itens">
+                <ul class="navbar-nav">
+                    <li class="nav-item me-4">
+                        <button type="button" class="btn btn-light text-dark border-st position-relative me-4">
+                            New Data
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                57
+                            </span>
+                        </button>
+                    </li>
+                    <li class="nav-item me-4">
+                        <select class="form-select border-st" aria-label="Default select example">
+                            <option value="Annual">Annual</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="Weekly">Weekly</option>
+                        </select>
+                    </li>
+                    <li class="nav-item me-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label link-light" for="flexCheckDefault">
+                                Staff
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label link-light" for="flexCheckChecked">
+                                Students
+                            </label>
+                        </div>
+                    </li>
+                    <li class="nav-item me-4">
+                        <input type="color" class="form-control form-control-color" id="exampleColorInput"
+                            value="#563d7c" title="Choose your color">
+                    </li>
+                    <li class="nav-item me-4">
+                        <button class="btn bg-black link-light dropdown-toggle" type="button" id="dropdownMais" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMais">
+                            <li>
+                                <button class="dropdown-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRegistro">
+                                    Grade Record
+                                </button>
+
+
+                                <button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#gradeFrequency">
+                                    Grade Frequency
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRegistro" aria-labelledby="offcanvasRegistroLabel">
         <div class="offcanvas-header">
@@ -134,47 +134,41 @@
 
             <div class="container col-2">
                 <div class="column">
-                  <div class="mt-5 mb-5 w-100">
-                    <div class="card text-center">
-                      <div class="card-body">
-                        <h5 class="card-title">
-                            <i class="fas fa-graduation-cap fa-2x"></i>
-                            <strong>Grade</strong>
-                        </h5>
-                        <p class="card-text display-4">B</p>
-                      </div>
+                    <div class="mt-5 mb-5 w-100">
+                        <div class="card text-center">
+                            <span class="card-header">
+                                <i class="fas fa-graduation-cap fa-2x"></i>
+                                <strong>Grade</strong>
+                            </span>
+                            <p class="card-text display-4">B</p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="mb-5 w-100">
-                    <div class="card text-center">
-                      <div class="card-body">
-                        <h5 class="card-title">
-                            <i class="fas fa-chart-line fa-2x"></i> 
-                            <strong>Attendance</strong>
-                        </h5>
-                        <p class="card-text display-4">89.5%</p>
-                      </div>
+                    <div class="mb-5 w-100">
+                        <div class="card text-center">
+                            <span class="card-header">
+                                <i class="fas fa-chart-line fa-2x"></i>
+                                <strong>Attendance</strong>
+                            </span>
+                            <p class="card-text display-4">89.5%</p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="w-100">
-                    <div class="card text-center">
-                      <div class="card-body">
-                        <h5 class="card-title">
-                            <i class="fas fa-clock fa-2x"></i>
-                            <strong>Related Hours</strong>
-                        </h5>
-                        <p class="card-text display-4">74h</p>
-                      </div>
+                    <div class="w-100">
+                        <div class="card text-center">
+                            <span class="card-header">
+                                <i class="fas fa-clock fa-2x"></i>
+                                <strong>Related Hours</strong>
+                            </span>
+                            <p class="card-text display-4">74h</p>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+            </div>
 
             <div class="container col-5 d-flex flex-column">
                 <label for="customRange3" class="form-label"></label>
                 <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
                 <div class="w-100 border-1 border-black">
-                    <div id="frequency_chart" style="width: 700px; height: 300px;"></div>
+                    <div id="frequency_chart" style="width: 100%; height: 300px;"></div>
                 </div>
                 <div class="w-100 border-1 border-black">
                     <div id="grade_chart" style="width: 700px; height: 400px;"></div>
@@ -184,38 +178,79 @@
             <div class="col-4 container ">
                 <div class="p-3 border rounded bg-white shadow-sm">
                     <table class="table table-bordered table-dark text-center align-middle mb-4">
-                      <thead>
-                        <tr>
-                          <th>Subject</th>
-                          <th>Attendance (%)</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr><td>Arts</td><td>89.5</td></tr>
-                        <tr><td>Biology</td><td>92.2</td></tr>
-                        <tr><td>Web Development</td><td>78.5</td></tr>
-                        <tr><td>Software Engineering</td><td>92.2</td></tr>
-                        <tr><td>Geography</td><td>95.8</td></tr>
-                      </tbody>
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Attendance (%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Arts</td>
+                                <td>89.5</td>
+                            </tr>
+                            <tr>
+                                <td>Biology</td>
+                                <td>92.2</td>
+                            </tr>
+                            <tr>
+                                <td>Web Development</td>
+                                <td>78.5</td>
+                            </tr>
+                            <tr>
+                                <td>Software Engineering</td>
+                                <td>92.2</td>
+                            </tr>
+                            <tr>
+                                <td>Geography</td>
+                                <td>95.8</td>
+                            </tr>
+                        </tbody>
                     </table>
-              
+
                     <table class="table table-bordered table-light text-center align-middle">
-                      <thead class="table-secondary">
-                        <tr>
-                          <th>Grades</th>
-                          <th>Total Qty</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr><td>A</td><td>189</td></tr>
-                        <tr><td>B</td><td>228</td></tr>
-                        <tr><td>C</td><td>211</td></tr>
-                        <tr><td>D</td><td>187</td></tr>
-                      </tbody>
+                        <thead class="table-secondary">
+                            <tr>
+                                <th>Grades</th>
+                                <th>Total Qty</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>A</td>
+                                <td>189</td>
+                            </tr>
+                            <tr>
+                                <td>B</td>
+                                <td>228</td>
+                            </tr>
+                            <tr>
+                                <td>C</td>
+                                <td>211</td>
+                            </tr>
+                            <tr>
+                                <td>D</td>
+                                <td>187</td>
+                            </tr>
+                        </tbody>
                     </table>
-                  </div>
+                </div>
             </div>
 
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" id="gradeFrequency">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="fs-3 fw-bold">Grade Frequency</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div id="mapchart" style="width: 50vw; height: 75vh;"></div>
+                </div>
+            </div>
         </div>
     </div>
 
