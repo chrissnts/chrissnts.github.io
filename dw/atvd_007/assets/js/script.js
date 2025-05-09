@@ -47,10 +47,13 @@ function contar() {
     pausando = false;
 }
 
+let content = document.body
+
 function pararContar() {
     clearInterval(id);
     contando = false;
     pausando = true;
+
 }
 
 document.addEventListener("keydown", function (event) {
@@ -78,5 +81,4 @@ document.addEventListener('keydown', function (event) {
             nave.style.left = posicao + 'px';
         }
     }
-
 });
