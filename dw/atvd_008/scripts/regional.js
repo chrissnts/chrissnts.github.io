@@ -40,6 +40,7 @@ function addRegional() {
 
     table.appendChild(line);
     data_regionals.push(regional)
+    drawChart();
 
 
 

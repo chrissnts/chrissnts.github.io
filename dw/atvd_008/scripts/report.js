@@ -45,6 +45,7 @@ function addReport() {
     // Adiciona o elemento <tr> ao elemento <table>
     table.appendChild(line);
     data_reports.push(report)
+    drawChart();
 
     
     

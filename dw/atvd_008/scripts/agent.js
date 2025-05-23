@@ -38,6 +38,7 @@ function addAgent() {
     // Adiciona o elemento <tr> ao elemento <table>
     table.appendChild(line);
     data_agents.push(agent)
+    drawChart();
 
 
 

@@ -34,6 +34,7 @@ function addSubject() {
     // Adiciona o elemento <tr> ao elemento <table>
     table.appendChild(line);
     data_subjects.push(assunto)
+    drawChart();
 
 
     // SELECT
