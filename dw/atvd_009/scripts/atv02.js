@@ -1,9 +1,7 @@
 function ex02() {
-    
     const form = document.querySelector('#form02')
     const input = form.querySelector('input[name="in_02"]').value
-    document.getElementById('output').innerHTML = resolve01(...input.trim().split(" ").map(Number));
-    alert(input)
+    document.getElementById('output').innerHTML = resolve02(...input.trim().split(" ").map(Number));
     form.reset()
 }
 
@@ -16,5 +14,5 @@ let resolve02 = function(...rest) {
 
     const media = soma / rest.length;
 
-    return media;
+    return `Média: ${media}`;
 }

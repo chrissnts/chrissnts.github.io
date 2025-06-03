@@ -1,28 +1,19 @@
-
-function ex01() {
-    
-    const form = document.querySelector('#form01')
-    const input = form.querySelector('input[name="in_01"]').value
-    alert(input)
-    document.getElementById('output').innerHTML = resolve03(...input.trim().split(" ").map(Number));
-    form.reset()
+function ex03() {
+    const form = document.querySelector('#form03');
+    const input = form.querySelector('input[name="in_03"]').value;
+    const numbers = input.trim().split(" ").map(Number);
+    document.getElementById('output').innerHTML = resolve03(numbers);
+    form.reset();
 }
 
-function resolve03() {
-    const map = new Map();
+function resolve03(numbers) {
+    const evenOrOdd = numbers.map(function (item) {
+        return isEven(item);
+    });
 
-    for (let i = 0; i < arguments.length; i++) {
-        map.set(i, arguments[i]);
-    }
+    return evenOrOdd.join("<br>");
+}
 
-    const result = [];
-
-    for (let [key, value] of map.entries()) {
-        result.push({
-            value: value,
-            isEven: typeof value === 'number' && value % 2 === 0
-        });
-    }
-
-    return result;
+function isEven(val) {
+    return val % 2 === 0 ? "PAR" : "ÍMPAR";
 }
