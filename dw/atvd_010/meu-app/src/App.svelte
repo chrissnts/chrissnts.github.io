@@ -91,7 +91,7 @@
 
   button {
     padding: 1em;
-	font-size: 1.5em;
+	  font-size: 1.5em;
     background-color: green;
     color: white;
     border-radius: 10px;
