@@ -20,7 +20,6 @@
 
 <main>
   <div class="container">
-	
     <div class="display">
       <p>{display || 0}</p>
     </div>
@@ -50,12 +49,11 @@
 </main>
 
 <style>
-
   main {
     display: flex;
     justify-content: center;
     align-items: center;
-	margin-top: 100px;
+    margin-top: 100px;
   }
 
   .container {
@@ -73,13 +71,13 @@
     grid-template-columns: 1fr;
     min-height: 70px;
     border-radius: 5px;
-	margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   .display p {
     color: goldenrod;
     font-size: 2em;
-	text-align: left;
+    text-align: left;
     margin-left: 20px;
   }
 
@@ -91,11 +89,10 @@
 
   button {
     padding: 1em;
-	  font-size: 1.5em;
+    font-size: 1.5em;
     background-color: green;
     color: white;
     border-radius: 10px;
     cursor: pointer;
   }
-
 </style>
